@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app id="WebApp_ID" version="2.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd">
+	<display-name>AppGesClients</display-name>
+	
+	
+	<servlet>
+        <servlet-name>ListClientsServlet</servlet-name>
+        <servlet-class>com.appgesclients.ListClientsServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>ListClientsServlet</servlet-name>
+        <url-pattern>/listClients</url-pattern>
+    </servlet-mapping>
+    
+    
+	<welcome-file-list>
+    <welcome-file>listClients.jsp</welcome-file>
+    
+    
+    
+</welcome-file-list>
+
+</web-app>
