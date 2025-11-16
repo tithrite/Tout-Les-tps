@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Nouveau Utilisateur</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        form {
+            width: 400px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        table {
+            width: 100%;
+        }
+        td {
+            padding: 10px;
+        }
+        input[type="submit"] {
+            padding: 8px 20px;
+            border: none;
+            background-color: #4CAF50;
+            color: white;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+        select, input[type="number"] {
+            width: 100%;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+    </style>
+</head>
+<body>
+
+<form method="POST" action="newUser">
+    <h1>Nouvel Utilisateur</h1>
+    <table>
+        <tr>
+            <td>Couleur de fond préférée :</td>
+            <td>
+                <select name="bgcol">
+                    <option>yellow</option>
+                    <option>blue</option>
+                    <option>red</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>Couleur de texte préférée:</td>
+            <td>
+                <select name="police">
+    <option value="green">Green</option>
+    <option value="blue">Blue</option>
+    <option value="red">Red</option>
+</select>
+
+            </td>
+        </tr>
+        <tr>
+            <td>Type de livre préféré:</td>
+            <td>
+                <select name="type">
+    <option >Programmation</option>
+    <option >Sécurité</option>
+    <option >Ingénierie</option>
+</select>
+
+            </td>
+        </tr>
+        <tr>
+            <td>Nombre préféré:</td>
+            <td>
+                <input name="nbr" type="number" required>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2" style="text-align: center;">
+                <input type="submit" value="Valider">
+            </td>
+        </tr>
+    </table>
+</form>
+
+</body>
+</html>
